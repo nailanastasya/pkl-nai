@@ -117,7 +117,7 @@ Route::get('/invoice/{id}/edit', [InvoiceController::class, 'edit'])->name('invo
 Route::put('/invoice/{id}', [InvoiceController::class, 'update'])->name('invoice.update');
 Route::delete('/invoice/{id}', [InvoiceController::class, 'destroy'])->name('invoice.destroy');
 Route::get('/invoice/search', [InvoiceController::class, 'search'])->name('invoice.search');
-Route::get('invoice/archive', [InvoiceController::class, 'archiveIndex'])->name('invoice.archiveIndex');
+Route::get('invoices/archive', [InvoiceController::class, 'archiveIndex'])->name('invoice.archiveIndex');
 Route::patch('invoice/{id}/archive', [InvoiceController::class, 'archive'])->name('invoice.archive');
 Route::patch('invoice/{id}/unarchive', [InvoiceController::class, 'unarchive'])->name('invoice.unarchive');
 

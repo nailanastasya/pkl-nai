@@ -82,22 +82,22 @@
 
     <!-- ✅ Tambahan card Archived -->
     <div class="col-md-3 col-sm-6 mb-3">
-        <a href="{{ route('invoice.archiveIndex') }}" class="text-decoration-none">
-            <div class="card stats-card archived h-100">
-                <div class="card-body">
-                    <div class="row align-items-center">
-                        <div class="col-8">
-                            <h6 class="text-muted mb-1">Archived</h6>
-                            <h3 class="mb-0">{{ $invoices->where('is_archived', true)->count() }}</h3>
-                        </div>
-                        <div class="col-4 text-end">
-                            <i class='bx bx-archive stats-icon text-warning'></i>
+                <a href="{{ route('invoice.archiveIndex') }}" class="text-decoration-none">
+                    <div class="card stats-card archived h-100">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <h6 class="text-muted mb-1">Archived</h6>
+                                    <h3 class="mb-0">{{ $invoices->where('is_archived', true)->count() }}</h3>
+                                </div>
+                                <div class="col-4 text-end">
+                                    <i class='bx bx-archive stats-icon text-warning'></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
-        </a>
-    </div>
 </div>
 
 
